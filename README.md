@@ -1,3 +1,13 @@
+## Prerequisites
+
+1. Install the required Python libraries
+```
+pip install asyncio beautifulsoup4 zendriver
+```
+2. Google Chrome
+
+## Result
+
 Here is an example of JSON output with a 1-second update interval; you can turn it into an API.
 
 ```json
