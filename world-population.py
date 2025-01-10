@@ -34,7 +34,10 @@ async def get_population_data(page):
             "current_population": format_number_with_commas(extract_counter_number('.rts-counter[rel="current_population"]')),
             "births_today": format_number_with_commas(extract_counter_number('.rts-counter[rel="births_today"]')),
             "deaths_today": format_number_with_commas(extract_counter_number('.rts-counter[rel="dth1s_today"]')),
-            "population_growth": format_number_with_commas(extract_counter_number('.rts-counter[rel="absolute_growth"]'))
+            "population_growth": format_number_with_commas(extract_counter_number('.rts-counter[rel="absolute_growth"]')),
+            "births_this_year": format_number_with_commas(extract_counter_number('.rts-counter[rel="births_this_year"]')),
+            "deaths_this_year": format_number_with_commas(extract_counter_number('.rts-counter[rel="dth1s_this_year"]')),
+            "population_growth_year": format_number_with_commas(extract_counter_number('.rts-counter[rel="absolute_growth_year"]'))
         }
         
         top_20_countries = []
