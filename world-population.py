@@ -89,7 +89,7 @@ async def main():
         while True:
             success = await get_population_data(page)
             if success:
-                await asyncio.sleep(1)
+                await asyncio.sleep(1) # Edit the number to change the update interval.
             else:
                 try:
                     await page.reload()
